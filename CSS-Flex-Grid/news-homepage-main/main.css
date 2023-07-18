@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;   
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(36, 100%, 99%);
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* height: 100vh; */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 90%;
+    /* border: 3px solid black; */
+}
+
+a{
+    padding: 20px;
+    text-decoration: none;
+    color: hsl(236, 13%, 42%)
+}
+
+a:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.one{
+    width: 55rem;
+    height: 20rem;
+    grid-area: one;
+}
+
+.one img{
+    width: 100%;
+    height: 100%;
+}
+
+.two{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    grid-area: two;
+}
+
+.two h2{
+    padding: 20px;
+}
+
+.two h3{
+    padding: 20px;
+}
+
+.two p{
+    padding: 20px;
+}
+
+.two h3{
+    cursor: pointer;
+}
+
+.two h2{
+    color: hsl(35, 77%, 62%);
+}
+
+.two h3:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+
+.three{
+    padding: 20px;
+    grid-area: three;
+}
+
+.three p{
+    font-weight:bolder;
+    font-size: 60px;
+}
+
+.four{
+    padding: 20px;
+    grid-area: four;
+}
+
+.four p{
+    padding-bottom: 20px;
+}
+
+.four button{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+}
+
+.four button:hover{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+
+.five{
+    display: flex;
+    grid-area: five;
+}
+
+.five .image{
+    height: 12rem;
+    width: 10rem;
+}
+
+.five img{
+    height: 100%;
+    width: 100%;
+}
+
+.five h2 {
+    padding: 20px;
+}
+
+.five h3{
+    padding: 0 10px;
+}
+
+.five p{
+    padding: 10px;
+}
+.six{
+    display: flex;
+    grid-area: six;
+}
+
+.six .image{
+    height: 12rem;
+    width: 10rem;
+}
+
+.six img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.six h2 {
+    padding: 20px;
+}
+
+.six h3{
+    padding: 0 10px;
+}
+
+.six p{
+    padding: 10px;
+}
+
+.seven{
+    display: flex;
+    grid-area: seven;
+}
+
+.seven .image{
+    height: 12rem;
+    width: 14rem;
+}
+
+.seven img{
+    height: 100%;
+    width: 100%;
+}
+
+.seven h2 {
+    padding: 20px;
+}
+
+.seven h3{
+    padding: 0 10px;
+}
+
+.seven p{
+    padding: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    width: 80%;
+    height: 70%;
+    justify-content: center;
+    grid-template-areas: "one one two"
+    "three four two"
+    "five six seven";
+}

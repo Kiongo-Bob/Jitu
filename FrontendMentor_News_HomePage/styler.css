@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body{
+    margin: auto;
+    margin-top: 2%;
+    height: 100%;
+    width: 80%;
+    font-family: 'Outfit', sans-serif;
+}
+p{
+    font-size: 15px;
+    font-weight: 400;
+}
+main{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    height: 10%;
+    width: 100%;
+    border: 2px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    width: 50%;
+    border: 3px;
+    height: 100%;
+}
+nav ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-one {
+    grid-area: one;
+}
+.image-one img{
+    width: 100%;
+    height: 100%;
+}
+
+.New-two{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-area: two;
+    background-color:hsl(240, 100%, 5%);
+}
+.New-two h2{
+    color: hsl(35, 77%, 62%);
+    margin-left: 3%;
+}
+
+.New-two hr{
+    background-color: lightgray;
+    margin-left: 3%;
+    
+}
+
+.text1, .text2, .text3 {
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+.Future-three{
+    grid-area: three;
+    text-align: left;
+}
+
+.Future-three h1{
+    font-weight: bold;
+    font-size: 30px;
+}
+.ReadMore-four{
+    grid-area: four;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ReadMore-four h5{
+    justify-content: flex-start;
+    font-weight: 1;
+
+}
+.ReadMore-four button{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+}
+.row3-five{
+    grid-area: five;
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+}
+.comp-img{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.comp-content{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.row3-six{
+    grid-area: six;
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+}
+.keyboard{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+}
+.keyboard-content{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.row3-seven{
+    height: 70%;
+    grid-area: seven;
+    display: flex;
+    flex-direction: row;
+}
+.pad img{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.pad-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+nav ul li:hover, h3:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows:48% 27% 25%;
+    grid-gap: 10px;
+    grid-template-areas: "one one two"
+    "three four two"
+    "five six seven";
+}
